@@ -9,3 +9,9 @@ body{
     margin-right: auto;
     display: block;
 }
+/*@media only screen and (max-width: 400px) {
+    body {
+        background-image: url('images/bulbasaur.jpeg');
+    }
+    
+} */
