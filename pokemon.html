@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Title of the document</title>
-<link rel="stylesheet" href="pokemon.css">
+    <meta charset="utf-8" />
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="pokemon.css">
 </head>
 
 <body>
-<img id="wallpaper" src="images/pokemon-back.jpg"/>
+    <form>
+        Enter A Pokemon: <input type="text" id="pokemonField" value=""><br>
+        Suggestion: <span id="txtHint">Empty</span>
+        <input id="pokemonButton" type="submit" value="Submit">
+    </form>
+<!-- <img id="wallpaper" src="images/pokemon-back.jpg"/> -->
+<div id="pokemonResults"></div>
 </body>
+
+<script text="type/javascript" src="pokemon.js"></script>
 
 </html>
