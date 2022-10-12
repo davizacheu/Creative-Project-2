@@ -1,5 +1,7 @@
 body{
     display: block;
+    background-image: url(images/pikachu-wallpaper.jpg);
+    background-size: cover;
 }
 
 #wallpaper{
