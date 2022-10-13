@@ -2,11 +2,18 @@
 document.getElementById("pokemonButton").addEventListener("click", function(event) {
     event.preventDefault();
     
+    function capitalizeFirstLetter(str) {
+      return (str.charAt(0).toUpperCase() + str.slice(1));
+    }
+
     const value = document.getElementById("pokemonField").value;
     let lowvalue = value.toLowerCase();
+    let finalvalue = capitalizeFirstLetter(lowvalue);
     if (value === "")
       return;
     console.log(lowvalue);
+    console.log(finalvalue);
+
     
 // require ('@favware/graphql-pokemon');
 
@@ -48,11 +55,18 @@ document.getElementById("pokemonButton").addEventListener("click", function(even
     
 //     document.getElementById("pokemonResults").innerHTML = results;
 //   });
-  fetch('https://api.pokemontcg.io/v2/cards') 
+  fetch('https://api.pokemontcg.io/v2/cards?q=name:'+finalvalue) 
   .then((res) => res.json())
   .then(function(json) {
     console.log(json);
-  
+    let results = "";
+    console.log(json.data.find(obj => {
+      return obj.name === finalvalue
+    }));
+    results+= "<img class = \"card\" src = '"+json.data.find(obj => {
+      return obj.name === finalvalue
+    }).images.small+"'/>";
+    document.getElementById("pokemonResults").innerHTML = results;
   });
 
 
