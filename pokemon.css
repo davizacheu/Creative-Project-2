@@ -19,10 +19,14 @@ body{
 .prompt{
     width: 33%;
 }
+.pokemonResults {
+    z-index: 3;
+}
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     body{
         display: block;
         background-image: url(images/bulbasaur.jpeg);
+        position: absolute;
         background-size:cover;
     }
     
@@ -40,6 +44,9 @@ body{
     .prompt{
         width: 45%;
     }
+    .pokemonResults {
+        z-index: 3;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -55,5 +62,8 @@ body{
     
     .prompt{
         width: 100%;
+    }
+    .pokemonResults {
+        z-index: 3;
     }
 }
