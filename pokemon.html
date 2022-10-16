@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <div class="webtitle"><img class="logo" src="images/Logo.png"></div>
-    <form>
-        <img class= 'prompt' src = "images/Enter-Pokemon-Name.png"><br>
-        <input type="text" id="pokemonField" value=""><br>
-        <input id="pokemonButton" type="submit" value="Submit">
-    </form>
-<!-- <img id="wallpaper" src="images/pokemon-back.jpg"/> -->
-<div id="pokemonResults"></div>
+    <div class="webtitle">
+        <img class="logo" src="images/Logo.png">
+        <form class='name-form'>
+            <img class= 'prompt' src = "images/Enter-Pokemon-Name.png"><br>
+            <input type="text" id="pokemonField" value=""><br>
+            <div id = "inputBreak"></div>
+            <input id="pokemonButton" type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="pokemonResults"></div>
 </body>
 
 <script text="type/javascript" src="pokemon.js"></script>
