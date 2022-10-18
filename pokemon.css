@@ -57,17 +57,22 @@ body{
         width: 20%;
     }
     
-    footer {
-       /*position: fixed;*/
-       /*bottom: 0;*/
-       /*width: 100%;*/
-       /*height: 60px;   */
-       /*background: #6cf;*/
-        width: 31%;             
+    .footer{
+        display:flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 
     #gitlink{
-        width: 31%;
+        width:100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #linkpic{
+        width: 30%;
+        margin-right: 3.5%;
     }
 
 }
