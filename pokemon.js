@@ -36,6 +36,6 @@ document.getElementById("pokemonButton").addEventListener("click", function(even
     });
   }, waitTime);
     
-  waitTime = 3000;
+  waitTime = 2000;
 
   });
